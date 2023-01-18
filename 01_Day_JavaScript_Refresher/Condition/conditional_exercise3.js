@@ -19,6 +19,9 @@ const getDaysInTheMonth = (month) => {
             break
         case (days28===month):
             console.log(`${month} has 28 days`)
+            break
+        default:
+            console.log('Invalid')
     }
 }
 
