@@ -46,3 +46,16 @@ const sumAllNums3 = (...args) => {
 
 sumAllNums3(1, 2, 3, 4)
 // [1, 2, 3, 4]
+
+// function declaration
+const sumAllNums4 = (...args) => {
+    let sum = 0
+    for (const element of args) {
+        sum += element
+    }
+    return sum
+}
+
+console.log(sumAllNums4(1, 2, 3, 4)) // 10
+console.log(sumAllNums4(10, 20, 13, 40, 10))  // 93
+console.log(sumAllNums4(15, 20, 30, 25, 10, 33, 40))  // 173
